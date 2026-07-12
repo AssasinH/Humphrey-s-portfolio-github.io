@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humphrey Ng'andu — Designer · Animator · Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="body.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#top" class="nav-logo">H<span>N</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">// computer science student · creative technologist</p>
+      <h1 class="hero-title">
+        Humphrey<br>
+        <span class="gradient-text">Ng'andu</span>
+      </h1>
+      <p class="hero-sub">
+        I design interfaces, animate them into motion, and build them for the web —
+        three disciplines, one continuous process.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-tags">
+        <span>Graphic Design</span>
+        <span>Animation</span>
+        <span>Web Development</span>
+      </div>
+    </div>
+
+    <div class="hero-cube-stage">
+      <div class="cube-scene">
+        <div class="cube" id="cube">
+          <div class="face front">DESIGN</div>
+          <div class="face back">CODE</div>
+          <div class="face right">MOTION</div>
+          <div class="face left">3D</div>
+          <div class="face top">UI/UX</div>
+          <div class="face bottom">HN</div>
+        </div>
+        <div class="cube-shadow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span></div>
+</header>
+
+<main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="section-head">
+      <p class="eyebrow">about</p>
+      <h2>A student learning to build beautiful, working things.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <p>
+          I'm <strong>Humphrey Ng'andu</strong>, a student at <strong>NIPA</strong> pursuing a
+          <strong>Bachelor of Computer Science</strong>. Alongside my coursework, I'm chasing a
+          growing interest in <strong>web development</strong> and <strong>web designing</strong> —
+          learning how good software is structured on the inside and how it should feel on the outside.
+        </p>
+        <p>
+          My background in graphic design and animation feeds directly into how I build for the
+          web: I think in layout, color, and motion before I think in code, then I bring the code
+          to match the vision.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Core disciplines</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">Active projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="1">0</span>
+          <span class="stat-label">Goal: web dev mastery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="section-head">
+      <p class="eyebrow">skills</p>
+      <h2>What I bring to a project.</h2>
+    </div>
+    <div class="skills-grid">
+
+      <article class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 16V32L24 44L4 32V16L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 4V44M4 16L44 32M44 16L4 32" stroke="currentColor" stroke-width="1" opacity="0.4"/></svg>
+        </div>
+        <h3>Graphic Designer</h3>
+        <p>Crafting visual identity — layout, color theory, typography, and composition that gives a brand or a page its voice.</p>
+        <div class="skill-bar"><span style="--w:88%"></span></div>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="12" cy="24" r="4" fill="currentColor"/><circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.6"/><circle cx="36" cy="24" r="4" fill="currentColor" opacity="0.3"/><path d="M4 24H44" stroke="currentColor" stroke-width="1" stroke-dasharray="2 3"/></svg>
+        </div>
+        <h3>Animator</h3>
+        <p>Bringing static designs to life with motion, timing, and 3D graphics — because interfaces should feel, not just look.</p>
+        <div class="skill-bar"><span style="--w:80%"></span></div>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M14 16L4 24L14 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 16L44 24L34 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 8L20 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Web Designer / Developer</h3>
+        <p>Turning design and motion into responsive, working websites — structured, styled, and animated with intent.</p>
+        <div class="skill-bar"><span style="--w:75%"></span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="section-head">
+      <p class="eyebrow">currently building</p>
+      <h2>What I'm working on right now.</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status-dot"></span>
+          <span class="status-label">In progress</span>
+        </div>
+        <h3>Animation &amp; 3D Graphics</h3>
+        <p>Exploring motion design and three-dimensional visuals — the same thinking behind the rotating cube above, pushed further into full animated scenes.</p>
+        <div class="project-tags"><span>Motion Design</span><span>3D</span><span>Animation</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status-dot"></span>
+          <span class="status-label">In progress</span>
+        </div>
+        <h3>Web Designing</h3>
+        <p>Designing and building interactive, responsive websites — this portfolio is part of that ongoing practice in layout, animation, and front-end code.</p>
+        <div class="project-tags"><span>HTML/CSS</span><span>UI Design</span><span>Responsive</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section reveal">
+    <div class="section-head">
+      <p class="eyebrow">education</p>
+      <h2>Where I'm learning it all.</h2>
+    </div>
+    <div class="edu-card">
+      <div class="edu-mark">BSc</div>
+      <div class="edu-info">
+        <h3>Bachelor of Computer Science</h3>
+        <p class="edu-school">NIPA — National Institute of Public Administration</p>
+        <p>Currently studying, with a focused interest in web development and web designing alongside core computer science coursework.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal contact-section">
+    <div class="section-head">
+      <p class="eyebrow">contact</p>
+      <h2>Let's build something together.</h2>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:humphreyngandu@gmail.com">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">humphreyngandu@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+260974171568">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2C9.6 20 4 14.4 4 7a2 2 0 011-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="contact-label">Call</span>
+        <span class="contact-value">0974 171 568</span>
+      </a>
+      <a class="contact-card" href="https://wa.me/260974171568" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.7-1.2A9 9 0 1012 3z" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 8.7c.2-.6.5-.6.8-.6h.5c.2 0 .4 0 .6.5s.6 1.5.6 1.6.1.3 0 .5-.2.3-.4.5-.3.3-.1.6c.2.3.9 1.4 1.9 2.2 1.3 1 2 .1.3 2.5.5.2.5.4.4.7-.1.3-.6 1.1-1.2 1.3-.5.2-1 .2-1.4 0-1-.3-2.5-1-4-2.7C9 12.5 8.3 11 8.1 10.6c-.2-.4-.6-1-.6-1.6s.3-.9.5-1.2z" fill="currentColor"/></svg>
+        </div>
+        <span class="contact-label">WhatsApp</span>
+        <span class="contact-value">0974 171 568</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Humphrey Ng'andu — Lusaka, Zambia</p>
+</footer>
+
+<script>
+  // Scroll-reveal for sections
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Animated counters for the about stats
+  const counters = document.querySelectorAll('.stat-num');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.count, 10);
+        let current = 0;
+        const step = Math.max(1, Math.floor(target / 30));
+        const tick = () => {
+          current += step;
+          if (current >= target) {
+            el.textContent = target;
+          } else {
+            el.textContent = current;
+            requestAnimationFrame(tick);
+          }
+        };
+        tick();
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c => counterObserver.observe(c));
+
+  // Cursor glow follows pointer (desktop only, respects reduced motion)
+  const glow = document.getElementById('cursorGlow');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (glow && !prefersReduced && window.matchMedia('(hover: hover)').matches) {
+    window.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+  }
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        navToggle.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
+</body>
+</html>
